@@ -24,21 +24,3 @@ def test_question():
 
 
 
-test_question()
-def calculate_score (board):
-
-    symbols = {'#':5, 'O':3, 'X':1, '!':-1, '!!':-3, '!!!':-5}
-    rowTotals = []
-    colTotals = []
-
-    '''Calculate the score per row and append it to the rowTotals list'''
-    for row in board:
-        rowTotals.append(sum([value for key, value in symbols.items() if key in row]))
-    
-    rowTotals = [num if num>=0 else 0 for num in rowTotals]
-
-    '''Calculate the score per column and append it to the colTotals list'''
-    for column, number in enumerate(board):
-        colTotals.append(sum([value for key, value in symbols.items() if key in column[number]]))
-
-    return rowTotals, colTotals
