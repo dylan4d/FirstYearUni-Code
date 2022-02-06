@@ -1,3 +1,4 @@
 # FirstYearUni-Code
-A collection of what I perceive to be notable code files from my first year at college. Not all of it but a summary.
+Code files become visible after the school year is finished.
+Year 2 files will become visible when Year 3 starts.
 
